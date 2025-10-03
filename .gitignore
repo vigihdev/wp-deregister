@@ -1,0 +1,18 @@
+# Dependency directories dot
+.DS_Store
+/.amazonq
+/.github
+/.vscode
+/.env
+/.env.local
+/.idea
+/.phpstorm.meta.php
+/server.php
+/composer.lock
+/vendor
+/build
+/dist
+/scripts
+/node
+/jsconfig.json
+/examples
