@@ -38,7 +38,7 @@ final class DeregisterService implements DeregisterContract
     {
         foreach ($this->filterHandles as $handles) {
             if (is_array($handles) && count($handles) >= 2) {
-                call_user_func_array('remove_filter', $handles);
+                call_user_func_array('add_filter', $handles);
             }
         }
     }
