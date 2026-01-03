@@ -4,27 +4,39 @@
     "version": "1.0.1",
     "type": "library",
     "license": "Mit",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "vigih dev",
             "email": "vigihdev@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.thrubus.id"
+        }
+    ],
     "require": {
-        "php": ">=8.0"
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "vigihdev/wp-kernel": "dev-main",
+        "vigihdev/serializer": "dev-main"
     },
     "autoload": {
         "psr-4": {
-            "WpDeregister\\": "src/"
+            "vigihdev\\WpDeregister\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WpDeregister\\Tests\\": "tests/"
+            "vigihdev\\WpDeregister\\Tests\\": "tests/"
         }
     },
     "scripts": {
-        "server": "php -S localhost:4377 server.php"
+        "dev": "php -S localhost:4377 dev.php"
     },
     "config": {
         "process-timeout": 0

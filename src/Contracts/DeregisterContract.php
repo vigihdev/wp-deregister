@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WpDeregister\Contracts;
+namespace vigihdev\WpDeregister\Contracts;
 
 interface DeregisterContract
 {
